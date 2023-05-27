@@ -1,0 +1,9 @@
+<div class="flex justify-center py-4 space-x-4">
+  <a
+    class="border px-2 py-1 text-sm font-medium rounded-3xl bg-slate-300 text--800 "
+    *ngFor="let tag of tags"
+    routerLink="/tag/{{ tag.name }}"
+  >
+    {{ tag.name }} ({{ tag.count }})
+  </a>
+</div>

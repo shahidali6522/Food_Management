@@ -1,0 +1,49 @@
+<div class="mt-16 ">
+  <app-search></app-search>
+  <app-tag></app-tag>
+  <div
+    class="rounded-3xl  flex flex-wrap gap-2 px-2 items-center justify-center "
+  >
+    <mat-card *ngFor="let food of foods" class="example-card p-3 mr-0 ml-0 mb-7">
+      <div>
+        <img
+          class="hover:opacity-75 cursor-pointer"
+          mat-card-image
+          src="{{ food.imageUrl }}"
+          alt="Photo of a Food"
+        />
+      </div>
+      <!-- heart -->
+      <mat-card-content
+        ><div class="flex justify-between items-center">
+          {{ food.name }}
+          <span
+            class="text-red-600 text-2xl favorite {{
+              food.favorite ? '' : 'not'
+            }}"
+            >❤</span
+          >
+        </div>
+      </mat-card-content>
+      <!-- star -->
+      <mat-card-actions>
+        <star-rating
+          [value]="food.star"
+          [totalstars]="5"
+          checkedcolor="red"
+          uncheckedcolor="gray"
+          size="24px"
+          [readonly]="true"
+        ></star-rating>
+      </mat-card-actions>
+
+      <div class="flex items-center justify-between">
+        <div class="px-1">{{ food.origins }}</div>
+      </div>
+
+      <div>
+        {{ food.price | currency }}
+      </div>
+    </mat-card>
+  </div>
+</div>
