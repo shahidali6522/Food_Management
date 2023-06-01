@@ -1,0 +1,55 @@
+<div
+  class="p-8 flex items-center justify-center h-full bg-slate-200 backgroundImage"
+>
+  <!-- <img src="/assets/remittance.jpeg" alt=""> -->
+
+  <mat-card class="rounded-3xl example-card p-5 gap-4 md:w-1/4 opacity-90">
+    <div>
+      <!-- Email  -->
+      <div>
+        <label
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >UserName</label
+        >
+        <input
+          type="text"
+          class="w-full outline-none p-2 text-gray-900 border rounded-lg sm:text-xs"
+        />
+      </div>
+
+      <!-- Password -->
+      <div class="pt-3">
+        <label
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Password</label
+        >
+        <input
+          type="text"
+          id="small-input"
+          class="w-full outline-none p-2 text-gray-900 border rounded-lg sm:text-xs"
+        />
+      </div>
+      <div class="pt-3">
+        <label
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >security key</label
+        >
+        <input
+          type="text"
+          id="small-input"
+          class="w-full outline-none p-2 text-gray-900 border rounded-lg sm:text-xs"
+        />
+      </div>
+    </div>
+
+    <div class="flex md:justify-end justify-center">
+      <button
+        routerLink="/dashboard"
+        type="button"
+        class="bg-blue-700 font-medium hover:bg-blue-800 py-2.5 rounded-full text-center text-sm text-white w-28"
+      >
+        Sign in
+      </button>
+    </div>
+  </mat-card>
+</div>

@@ -19,6 +19,7 @@ import { SearchComponent } from './search/search.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { TagComponent } from './tag/tag.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { TagComponent } from './tag/tag.component';
     FoodComponent,
     SearchComponent,
     TagComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

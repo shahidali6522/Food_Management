@@ -1,0 +1,11 @@
+::ng-deep .mat-mdc-card{
+    --mdc-elevated-card-container-shape: 11px !important;
+}
+.backgroundImage{
+    background-image: url('/assets/Remittance.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+ 
+}
