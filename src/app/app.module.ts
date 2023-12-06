@@ -10,7 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
-import { RatingModule } from 'ng-starrating';
+
 import { FruitComponent } from './Fruits/fruit/fruit.component';
 import { FoodComponent } from './food/food.component';
 import { VegetablesModule } from './Vegetables/module/vegetables.module';
@@ -36,7 +36,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RatingModule,
+
     VegetablesModule,
     FormsModule,
 
@@ -52,4 +52,4 @@ import { ContactComponent } from './contact/contact.component';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

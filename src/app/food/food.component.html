@@ -23,17 +23,7 @@
           >
         </div>
       </mat-card-content>
-      <!-- star -->
-      <mat-card-actions>
-        <star-rating
-          [value]="food.star"
-          [totalstars]="5"
-          checkedcolor="red"
-          uncheckedcolor="gray"
-          size="24px"
-          [readonly]="true"
-        ></star-rating>
-      </mat-card-actions>
+    
 
       <div>
         {{ food.price | currency }}
